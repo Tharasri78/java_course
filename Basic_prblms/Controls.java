@@ -11,10 +11,6 @@ public class Controls{
 
      }else{
         System.err.println("Not stable");
-     }
-     
-
-
-        
+     }  
 
         }}
