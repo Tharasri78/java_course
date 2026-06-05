@@ -15,6 +15,7 @@ public class Vehicle {
         car.color = "Red";
         car.speed = 120;
 
+
         Vehicle bike = new Vehicle();
         bike.type = "Bike";
         bike.color = "Blue";

@@ -22,19 +22,35 @@ public class password {
                 special++;
         }
 
-        if (password.length() < 8)
-            System.out.println("Password too short");
-        else if (upper == 0)
-            System.out.println("Missing uppercase letter");
-        else if (lower == 0)
-            System.out.println("Missing lowercase letter");
-        else if (digit == 0)
-            System.out.println("Missing digit");
-        else if (special == 0)
-            System.out.println("Missing special character");
-        else
-            System.out.println("Strong Password");
+        int count = 0;
 
-        
+        if (password.length() < 8) {
+            System.out.println("Password too short");
+            count++;
+        }
+
+        if (upper == 0) {
+            System.out.println("Missing uppercase letter");
+            count++;
+        }
+
+        if (lower == 0) {
+            System.out.println("Missing lowercase letter");
+            count++;
+        }
+
+        if (digit == 0) {
+            System.out.println("Missing digit");
+            count++;
+        }
+
+        if (special == 0) {
+            System.out.println("Missing special character");
+            count++;
+        }
+
+        if (count == 0) {
+            System.out.println("Strong Password");
+        }
     }
 }
